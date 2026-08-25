@@ -75,3 +75,31 @@ Caso exista algum erro, deverá apresentar uma mensagem informando o que precisa
 RF09 — Confirmação
 
 Após o preenchimento correto do formulário, o sistema deverá apresentar uma mensagem de confirmação do envio do interesse.
+
+
+
+📱 Responsividade
+
+O site deverá possuir uma interface responsiva, adaptando-se a diferentes tamanhos de tela, incluindo:
+
+Computadores;
+Notebooks;
+Tablets;
+Smartphones.
+
+A responsividade será trabalhada como parte do desenvolvimento do site, sem definir neste momento a criação de um aplicativo separado.
+
+🎨 Requisitos de interface
+
+A plataforma deverá apresentar uma identidade visual:
+
+Acolhedora;
+Simples;
+Intuitiva;
+Responsiva;
+Fácil de navegar;
+Relacionada ao tema de adoção de animais.
+
+Os animais deverão possuir destaque visual através de fotografias e cards organizados.
+
+A interface deverá priorizar uma boa experiência de navegação e facilitar o acesso às informações dos pets.
