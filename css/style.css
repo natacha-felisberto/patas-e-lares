@@ -1,0 +1,365 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   VARIÁVEIS DE CORES
+========================= */
+
+:root {
+    --amarelo: #E5B84B;
+    --amarelo-claro: #F8E8B0;
+    --terracota: #D97955;
+    --creme: #FFF8EC;
+    --marrom: #3A302A;
+    --branco: #FFFFFF;
+}
+
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--creme);
+    color: var(--marrom);
+    line-height: 1.6;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background-color: var(--branco);
+    border-bottom: 3px solid var(--amarelo);
+}
+
+
+.header .container {
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--marrom);
+}
+
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+
+.menu a {
+    font-weight: 600;
+}
+
+
+.menu a:hover {
+    color: var(--terracota);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 80px 0;
+}
+
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.hero-text {
+    flex: 1;
+}
+
+
+.hero-subtitle {
+    color: var(--terracota);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-size: 3.2rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+
+.hero-text > p:not(.hero-subtitle) {
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+
+.hero-image {
+    flex: 1;
+}
+
+
+.hero-image img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: var(--amarelo);
+    color: var(--marrom);
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    background-color: var(--terracota);
+    color: var(--branco);
+}
+
+
+.button-secondary {
+    margin-top: 15px;
+    background-color: var(--terracota);
+    color: var(--branco);
+}
+
+
+/* =========================
+   TÍTULOS DAS SEÇÕES
+========================= */
+
+.section-title {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+
+.section-title h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PETS
+========================= */
+
+.pets {
+    padding: 80px 0;
+    background-color: var(--amarelo-claro);
+}
+
+
+.pets-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+.pet-card {
+    background-color: var(--branco);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(58, 48, 42, 0.08);
+}
+
+
+.pet-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+
+.pet-info {
+    padding: 25px;
+}
+
+
+.pet-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+
+.pet-size {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background-color: var(--amarelo-claro);
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.how-it-works {
+    padding: 80px 0;
+}
+
+
+.steps {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+}
+
+
+.step {
+    text-align: center;
+}
+
+
+.step span {
+    display: inline-block;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    color: var(--terracota);
+
+    margin-bottom: 15px;
+}
+
+
+.step h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: var(--marrom);
+    color: var(--branco);
+
+    padding: 30px 0;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+}
+
+
+.footer p + p {
+    margin-top: 5px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+
+    .pets-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+}
